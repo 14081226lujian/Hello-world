@@ -1,35 +1,34 @@
- var i : number = 0;
- var j : number = 0;
- var n : number = 5;
- var line : number = 0;
+ var a : number = 0;
+ var b : number = 0;
+ var m : number = 5;
+ var l : number = 0;
  
- var spaceResult = "";
- var starResult = "";
- var space = " ";
- var star = "*";
+ var sr = "";
+ var srt = "";
+ var sc = " ";
+ var sa = "*";
 
 
- line = getLine(n);
- drawPyramid(line);
-
-
-
- function drawPyramid(n : number) : void{
-     for(i = 0 ; i < n; i++){
-         for(j = 0; j < n - i; j++){
-             spaceResult = spaceResult + space;
-         }
-         for(j = 0; j < 2 * i + 1; j++){
-             starResult = starResult + star;
-         }
-         console.log(spaceResult + starResult);
-         spaceResult = ""
-         starResult = ""
-     }
- }
-
-
-//确实是函数决定金字塔多少行...但不是从键盘输入的...并不会从键盘上输入....
- function getLine(line : number) : number{
-     return line;
- }
+ l = gl(m);
+ play(l);
+ 
+ function play(n : number) : void{
+for(a = 0 ; a < n; a++)
+{
+for(b = 0; b< n - a; b++)
+{
+        sr = sr + sc;
+}
+for(b = 0; b < 2 * a + 1; b++)
+{
+srt = srt + sa;
+}
+    console.log(sr + srt);
+    sr = ""
+    srt = ""
+}
+}
+function gl(l : number) : number
+{
+     return l;
+}
